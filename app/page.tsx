@@ -56,11 +56,11 @@ const ChatInput = ({ onSend, disabled }: InputProps) => {
   };
 
   return (
-    <div className="bg-transparent border-2 border-[#FB601F] p-2 rounded-lg flex justify-center">
+    <div className="bg-black border-2 border-[#FB601F] p-2 rounded-lg flex justify-center">
       <input
         value={input}
         onChange={(e: any) => setInput(e.target.value)}
-        className="w-full py-2 px-3 text-white bg-[#FB601F80] rounded-lg focus:outline-none"
+        className="w-full py-2 px-3 text-white bg-[#FB601FCC] rounded-lg focus:outline-none"
         type="text"
         placeholder="Ask me about Fitburn!"
         disabled={disabled}
@@ -121,7 +121,7 @@ export default function Home() {
       <div className="w-full flex flex-col items-center justify-center">
         <Image src={botPic} alt="logo" width={180}></Image>
         <div className={manrope.className}>
-          <div className="text-white text-xl">Fitburn AI Chat</div>
+          <div className="text-white text-xl">FitGPT AI Chat BETA</div>
         </div>
       </div>
       <div className="sticky top-0 w-full pt-10 px-4">
